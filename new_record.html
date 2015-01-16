@@ -1,0 +1,67 @@
+<?php
+	session_start();
+?>
+<!DOCTYPE html>
+<head>
+<title>UserProfile</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<style type="text/css">
+	
+.bdr{border: 1px solid red;}
+.red{background: red;}
+.blue{background: blue;}
+.green{background: green;}
+.red, .green, .blue{min-height: 100px;}
+.mgbtm1{margin-bottom: 10px; overflow: hidden;}
+.container{padding-top: 20px; margin: 0 auto; width: 950px;}
+</style>
+</head>
+
+<body>
+
+<div class="container" style="margin-top:30px;">
+	<div class="col-sm-2">&nbsp;</div>
+	<div class="col-sm-8">
+		<form action="insert.php" method="post">
+
+			<table>
+				<tr>
+			    <td class="text1">&nbsp;</td>
+			    <td class="text1"> </td>
+			    <td class="text1"><!-- <input type="text" type="text" disabled="disabled"  name="uid" /> --></td>
+			    <td class="text1">&nbsp;</td>
+			  </tr>
+			  <tr>
+			    <td class="text1">&nbsp;</td>
+			    <td class="text1">User Name: </td>
+			    <td class="text1"><input type="text" name="user" /></td>
+			    <td class="text1">&nbsp;</td>
+			  </tr>
+			  <tr>
+			    <td class="text1">&nbsp;</td>
+			    <td class="text1">Password:</td>
+			    <td class="text1"><input type="password" name="pass" /></td>
+					<td class="text1">
+		    </tr>
+		    <tr>
+			    <td class="text1">&nbsp;</td>
+			    <td class="text1"><!-- <a href="#">Edit</a> --></td>
+			    <td class="text1"></td>
+					<td class="text1">
+		    </tr>
+		    <tr>
+			    <td class="text1">&nbsp;</td>
+			    <td class="text1"></td>
+			    <td class="text1"><input type ="submit" name="submit" value="submit" /></td>
+					<td class="text1">
+		    </tr>
+			</table>
+
+		</form>
+	</div>
+	<div class="col-sm-2">&nbsp;</div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<?php
+	session_start();
+?>
+<!DOCTYPE html>
+<head>
+<title>UserProfile</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<style type="text/css">
+.mgbtm1{margin-bottom: 10px; overflow: hidden;}
+.container{padding-top: 20px; margin: 0 auto;}
+</style>
+</head>
+
+<body>
+
+<div class="col-sm-12" style="margin-top:30px;">	
+	<div class="col-sm-12">
+		<form action="php/session.php" method="post">
+			<div class="col-sm-4"></div>
+			<div class="col-sm-4">
+				<div class="account block"> <!-- ACCOUNT (RIGHT-CONTAINER) -->
+			      <h2 class="titular">SIGN IN TO YOUR ACCOUNT</h2>
+			      <div class="input-container">
+			      	<div class="col-sm-12"><label>User Name</label></div>
+			      	<div class="col-sm-12">
+			          <input type="text" class="email text-input" placeholder="user name" name="user">
+			          <div class="input-icon envelope-icon-acount"><span class="fontawesome-envelope scnd-font-color"></span></div>
+			        </div>
+			      </div>
+			      <div class="input-container">
+			      	<div class="col-sm-12"><label>Password</label></div>
+			      	<div class="col-sm-12">
+			          <input type="text" class="password text-input" placeholder="Password" name="pass">
+			          <div class="input-icon password-icon"><span class="fontawesome-lock scnd-font-color"></span></div>
+			        </div>
+			      </div>
+			      <input type ="submit" name="submit" value="submit" class="sign-in button" />
+			      <!-- <a href="#22" class="sign-in button">SIGN IN</a> -->
+			      <p class="scnd-font-color">Forgot Password?</p>
+			      <p class="text-center">
+			      	<a href='new_user.html' class="scnd-font-color">New Users</a>
+			      </p>
+			      <a href="58" class="fb-sign-in">
+			        <p><span class="fb-border"><span class="icon zocial-facebook"></span></span>Sign in with Facebook</p>
+			      </a>
+			  </div>
+			</div>
+			<div class="col-sm-4"></div>
+		</form>
+	</div>
+</div>
+
+</body>
+</html>
