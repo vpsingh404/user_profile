@@ -245,6 +245,9 @@ h1, h2, p, a, span{
 		.header-menu {
 			font-size: 17px;
 			line-height: 80px;
+			width: 50%;
+			overflow: hidden;
+			float: left;
 		}
 			.header-menu li {
 				position: relative;
@@ -288,16 +291,18 @@ h1, h2, p, a, span{
 			float: right;
 			height: 80px;
 			padding-right: 20px;
+			padding-top: 20px;
+			text-align: right;
 		}
 			.profile-menu p {
 				font-size: 17px;
 				display: inline-block;
-				line-height: 76px;
+				line-height: 50px;
 				margin: 0;
 				padding-right: 10px;
 			}
 				.profile-menu a {
-					padding-left: 5px;
+					/*padding-left: 5px;*/
 				}
 					.profile-menu a:hover {
 						text-decoration: none;

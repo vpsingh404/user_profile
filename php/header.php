@@ -22,3 +22,5 @@
     </div>
 </div>
 <script src="../js/jquery-1.11.2.min.js"></script>
+<script src="../js/jquery.fancybox-1.3.4.js"></script>
+<script src="../css/jquery.fancybox-1.3.4.css"></script>
