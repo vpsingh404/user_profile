@@ -1,7 +1,7 @@
 
 <ul class="header-menu horizontal-list">
     <li>
-        <a class="header-menu-tab" href="#1"><span class="icon entypo-cog scnd-font-color"></span>Settings</a>
+        <a class="header-menu-tab" href="user_gallery.php"><span class="icon entypo-cog scnd-font-color"></span>Gallery</a>
     </li>
     <li>
         <a class="header-menu-tab" href="update_profile_new.php"><span class="icon fontawesome-user scnd-font-color"></span>Account</a>
@@ -22,5 +22,5 @@
     </div>
 </div>
 <script src="../js/jquery-1.11.2.min.js"></script>
-<script src="../js/jquery.fancybox-1.3.4.js"></script>
-<script src="../css/jquery.fancybox-1.3.4.css"></script>
+<script src="../js/fancybox.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/fancybox.css">
