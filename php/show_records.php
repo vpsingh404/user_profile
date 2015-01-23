@@ -5,7 +5,6 @@
 <!DOCTYPE html>
 <head>
 <title>UserProfile</title>
-<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 </head>
 
 <body>

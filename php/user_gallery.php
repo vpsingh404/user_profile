@@ -1,14 +1,13 @@
 
 <?php 
     require_once 'connection.php'; 
+
     session_start();
 ?>
 <!DOCTYPE html>
 <html>
 <head>
 <title>UserProfile</title>
-
-<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
 <link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
 <body>
@@ -27,24 +26,24 @@
 
     <!-- MIDDLE-CONTAINER -->
     <div class="col-sm-9">
-        <div class="account block col-sm-12" style="padding:25px 10px;">
-            <?php include "call_gallery.php"; ?>
-        </div>
-        <div class="account block col-sm-12"> <!-- ACCOUNT (RIGHT-CONTAINER) -->
-          <h2 class="titular">Add Your Photos</h2>
-          <div id="gallery" class="col-sm-12">
-            <form action="image_gallery.php" enctype="multipart/form-data" method="POST" >
-              <p>
-                <label>Select Photo 
-                    <!-- <input name="MAX_FILE_SIZE" value="102400" type="hidden"> -->
-                    <input type="file" name="myfile[]" multiple="multiple"/>
-                    <!-- <input type="text" name="nm"/> -->
-                </label>
-              </p>
-              <p><input type="submit" class="sign-in button" value="Upload Files" name="submit"></p>
-            </form>
+      <div class="account block col-sm-12" style="padding:25px 10px;">
+        <form action="image_gallery.php" enctype="multipart/form-data" method="POST" >
+        <div class="col-sm-12 mgbtm2"> <!-- ACCOUNT (RIGHT-CONTAINER) -->
+          <div class="col-sm-4">
+            <h2 class="titular mainH">Add Your Photos</h2>
+          </div>
+          <div id="gallery" class="col-sm-4">
+            <p><input type="file" name="myfile[]" multiple="multiple"/></p>
+          </div>
+          <div class="col-sm-3">
+            <button type="submit" class="btn btn-success dropdown-toggle" name="submit">Upload Files </button>
           </div>
         </div>
+        </form>
+        <div class="col-sm-12">
+          <?php include "call_gallery.php"; ?>
+        </div>
+      </div>  
     </div>
 
   </div>
@@ -66,5 +65,8 @@
         closeClick : true
 
       });
+
+      $( ".galThumnail" ).prepend( $( "<a class='remove' onClick='removeImg()'>X</a>" ) );
+
   });
 </script>
