@@ -2,6 +2,7 @@
 
 require_once("connection.php");
 include "remove_directory.php";
+include "remove_gallery.php";
 //session_start();
 
 

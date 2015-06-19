@@ -42,8 +42,6 @@
         </form>
         <div class="col-sm-12">
           <?php include "call_gallery.php"; ?>
-          <?php include "remove_directory.php"; ?>
-          <?php include "remove_gallery.php"; ?>
         </div>
       </div>  
     </div>
